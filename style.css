@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Fraunces";
+  /* src: url("assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+      format("ttf") tech("variations"),
+    url("assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+      format("ttf-variations"); */
+  src: url("assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Manrope";
+  /* src: url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("ttf")
+      tech("variations"),
+    url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf")
+      format("ttf-variations"); */
+  src: url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+  font-weight: 400 600 700;
+}
+
+.features {
+}
+
+.features__item h2 {
+  font-family: "Fraunces";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
