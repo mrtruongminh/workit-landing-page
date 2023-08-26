@@ -1,27 +1,124 @@
 @font-face {
   font-family: "Fraunces";
-  /* src: url("assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
-      format("ttf") tech("variations"),
-    url("assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
-      format("ttf-variations"); */
-  src: url("assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+  src: url("assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format(truetype) tech(variations);
+  font-weight: 600;
 }
 
 @font-face {
   font-family: "Manrope";
-  /* src: url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("ttf")
-      tech("variations"),
-    url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf")
-      format("ttf-variations"); */
-  src: url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+  src: url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf")
+    format(truetype) tech(variations);
   font-weight: 400 600 700;
+}
+
+:root {
+  --color-dark-purple: #24053e;
+  --color-eucaplyptus: #44ffa1;
+  --color-davys-grey: #584d62;
+  --color-white: #fff;
+
+  --font-family-primary: "Fraunces";
+  --font-family-secondary: "Manrope";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-primary);
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-family: var(--font-family-secondary);
+}
+
+.btn--primary {
+  background-color: var(--color-eucaplyptus);
+  color: var(--color-dark-purple);
+  font-weight: 700;
+  padding: 13px 25.5px;
+  border: 2px solid var(--color-eucaplyptus);
+}
+
+.btn--primary:hover {
+  background-color: inherit;
+  color: var(--color-eucaplyptus);
+}
+
+.btn--secondary {
+  font-weight: 700;
+  color: var(--color-white);
+  position: relative;
+}
+
+.btn--secondary:hover {
+  color: var(--color-eucaplyptus);
+}
+
+.btn--secondary::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-eucaplyptus);
+}
+
+.hero {
+  background-color: var(--color-dark-purple);
+  padding: 57.78px 165.35px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.hero h1 {
+  font-feature-settings: "clig" off, "liga" off;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 1;
+  text-align: center;
+  color: var(--color-white);
+  max-width: 13ch;
+  margin: 0 auto 37px;
+}
+
+.hero h1 span {
+  display: inline-block;
+  position: relative;
+}
+
+.hero h1 span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-eucaplyptus);
+}
+
+.hero .btn--primary {
+  margin: 0 auto;
 }
 
 .features {
 }
 
 .features__item h2 {
-  font-family: "Fraunces";
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
