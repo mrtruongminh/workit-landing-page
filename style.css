@@ -18,6 +18,7 @@
   --color-dark-purple: #24053e;
   --color-eucaplyptus: #44ffa1;
   --color-davys-grey: #584d62;
+  --color-ghost-white: #fcf8ff;
   --color-white: #fff;
 
   --font-family-primary: "Fraunces";
@@ -70,6 +71,8 @@ h5 {
   height: 3px;
   background-color: var(--color-eucaplyptus);
 }
+
+/* --------------------HERO SECTION-------------------- */
 
 .hero {
   height: 630px;
@@ -137,11 +140,72 @@ h5 {
   top: 450px;
 }
 
+/* --------------------FEATURES SECTION-------------------- */
+
 .features {
+  width: 100%;
+  background-color: var(--color-ghost-white);
+  /* position: relative; */
 }
 
-.features__item h2 {
+/* .features::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: -75px;
+  height: 150px;
+  border-radius: 50% / 50%;
+  background-color: var(--color-ghost-white);
+} */
+
+.feature__list {
+  display: flex;
+  max-width: 1114px;
+  margin: 0 auto;
+  column-gap: 26px;
+}
+
+.feature__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature__number {
+  width: 56px;
+  height: 56px;
+  border-radius: 30.5px;
+  border: 1px solid var(--color-davys-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.feature__number span {
+  color: var(--color-dark-purple);
+  font-family: var(--font-family-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.66667;
+}
+
+.feature__item h2 {
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
+  margin-bottom: 28px;
 }
+
+.feature__item p {
+  color: var(--color-dark-purple);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--font-family-secondary);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.7778;
+}
+
+/* --------------------SIGNUP SECTION-------------------- */
