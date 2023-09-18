@@ -25,6 +25,10 @@
   --font-family-secondary: "Manrope";
 }
 
+body {
+  padding-bottom: 110px;
+}
+
 h1,
 h2,
 h3,
@@ -77,7 +81,7 @@ h5 {
 .hero {
   height: 630px;
   padding: 57.5px 165px 0;
-  margin-bottom: 300px;
+  /* margin-bottom: 300px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,9 +139,9 @@ h5 {
 
 .hero__image {
   width: 715px;
-  z-index: 1;
   position: absolute;
   top: 450px;
+  z-index: 1;
 }
 
 /* --------------------FEATURES SECTION-------------------- */
@@ -146,6 +150,7 @@ h5 {
   width: 100%;
   background-color: var(--color-ghost-white);
   /* position: relative; */
+  margin-bottom: 281px;
 }
 
 /* .features::after {
@@ -209,3 +214,70 @@ h5 {
 }
 
 /* --------------------SIGNUP SECTION-------------------- */
+
+.signup {
+  min-height: 586px;
+  max-width: 1114px;
+  margin: 0 auto 121.78px;
+  position: relative;
+}
+
+.signup__image {
+  width: 477px;
+  height: 477px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.signup__card {
+  background-color: var(--color-dark-purple);
+  width: 730px;
+  padding: 64px;
+  position: absolute;
+  top: 173px;
+  right: 0;
+}
+
+.signup__card h2 {
+  color: var(--color-white);
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.14286;
+  margin-bottom: 32px;
+}
+
+.signup__card p {
+  color: var(--color-white);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.77778;
+  margin-bottom: 32px;
+}
+
+.signup__spring {
+  position: absolute;
+  bottom: -61.74px;
+  right: 72.69px;
+}
+
+/* --------------------CONTACT SECTION-------------------- */
+
+.contact {
+  max-width: 116px;
+  height: 102.224px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__logo {
+  margin: 0 auto;
+}
+
+.contact__social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
